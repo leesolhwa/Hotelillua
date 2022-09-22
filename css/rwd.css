@@ -1,0 +1,89 @@
+/*Responsive Web Design*/
+@charset "UTF-8";
+
+/******** 1480px *********/
+@media (max-width:1480px){
+  header{
+    margin: 0 3.5vw;
+  }
+  .con1, .con2{
+    width: 100%;;
+  }
+}
+
+/******** 1023px *********/
+@media (max-width:1023px){
+  header{ height:80px; }
+  .logo{ top: 22px; }
+  .logo01{
+    font-size: 0.7rem;
+  }
+  .logo02{
+    font-size: 1.4rem;
+  }
+  .menu_container{
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    /* inset: 0; 부모영역이 없으면 위치값 조정없이 편하게 안전영역 만들수 있음  */
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 10;
+  }
+  #menu{
+    margin-top: 6vh;
+  }
+  #menu > li{
+    display: block;
+  }
+  #menu > li > a{
+    padding: 0;
+    font-size: 5vw;
+    line-height: 15vh;
+  }  
+  .m_menuBtn{
+    display: block;
+    z-index: 20;
+  }
+
+  .global_container{
+    display: none;
+  }
+
+  .reservation_container{
+    right: 50px; top: 32px;
+  }
+  .reservation_container a{
+    border: none;
+    font-size: 12px;
+    padding: 0;
+  }
+  #header_wrap.scroll .reservation_container a{
+    border: none;
+  }
+
+  .main_text{
+    font-size: 5vw;
+  }
+  .main_text_reservation{
+    display: inline-block;
+  }
+  .main_text_reservation a{
+    display: block;
+    padding: 15px 40px;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: all 300ms;
+  }
+  .main_text_reservation a:hover{
+    color: #000;
+    background: #fff;
+  }
+}
+
+/******** 600px *********/
+@media(max-width:600px){
+  .main_text{
+    font-size: 33px;
+    margin-bottom: 20px;
+  }
+}
