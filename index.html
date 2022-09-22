@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>동영상 배경 헤더고정</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/rwd.css">
+  <script src="https://kit.fontawesome.com/b1aa3e64d6.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script defer src="js/main.js"></script>
+
+</head>
+
+<body>
+  <div id="header_wrap">
+    <header>
+      <h1 class="logo">
+        <a href="#">
+          <span class="logo01">Hotel</span>
+          <span class="logo02">illua</span>
+        </a>
+      </h1>
+      <nav class="menu_container">
+        <ul id="menu">
+          <li><a href="#">ROOMS</a></li>
+          <li><a href="#">OFFERS</a></li>
+          <li><a href="#">DINING & BAR</a></li>
+          <li><a href="#">FACILTIES</a></li>
+          <li><a href="#">ABOUT</a></li>
+        </ul>
+      </nav>
+      <div class="global_container">
+        <a href="#">EN <i class="fa-solid fa-earth-americas"></i></a>
+      </div>
+      <div class="reservation_container">
+        <a href="#">RESERVATION</a>
+      </div>
+      <a href="#" class="m_menuBtn">
+        <span class="m_menuBtn_line1"></span>
+        <span class="m_menuBtn_line2"></span>
+      </a>
+    </header>
+  </div>
+
+  <main>
+    <div class="main_full">
+      <section class="main_visual">
+        <!--autoplay muted 같이 있어야 자동재생됨 -->
+        <video autoplay muted playsinline loop poster="media/main-visual-vid-poster-01-v2.jpeg">
+          <!--같은동영상이면 포맷을 달리해서 요즈음 각광받는 방식
+<source src="media/hotel.webm" type="videl/webm">-->
+          <source src="media/hotel.mp4" type="video/mp4">
+          이 브라우저에서는 동영상 기능을 지원하지 않습니다.
+        </video>
+        <div class="main_text_container">
+          <p class="main_text">조용하고 프라이빗한 호텔</p>
+          <div class="main_text_reservation">
+            <a href="#">RESERVATION</a>
+          </div>
+        </div>
+      </section>
+      <section class="con1">
+        <div class="con1_content">
+          <div class="con1_content_inner">
+            <div class="wrap">
+							<h2>STAY ALL INCLUSIVE</h2>
+
+              <div class="list_content_wrap">
+                <div class="list_content">
+                  <a href="#">
+                    <img src="img/어텀-겟어웨이_pkg-837x558.jpg" alt="어썸-겟어웨이">
+                  </a>
+                  <h3>어텀 겟어웨이</h3>
+                  <p>선선한 가을 바람과 함께 즐기는 낭만적인 여행</p>
+                </div>
+                <div class="list_content_lower">
+                  <div class="lower_wrap">
+                      <b>예약기간</b>
+                      <span>22.09.04 - 22.12.22</span>
+                  </div>
+                  <div class="lower_wrap">
+                    <b>숙박기간</b>
+                    <span>22.09.04 - 22.12.22</span>
+                  </div>
+                </div> <!--list_content_lower END-->
+              </div> <!--list_content_wrap END-->
+
+              <div class="list_content">
+                <a href="#">
+                  <img src="img/brooke-lark-aGjP08-HbYY-unsplash-837x558.jpg" alt="어썸-겟어웨이">
+                </a>
+                <h3>스위트 딜라이트</h3>
+                <p>일상에서 벗어나 달콤한 하루를 즐겨보세요.</p>
+              </div>
+              <div class="list_content_lower">
+                <div class="lower_wrap">
+                    <b>예약기간</b>
+                    <span>22.09.04 - 22.12.22</span>
+                </div>
+                <div class="lower_wrap">
+                  <b>숙박기간</b>
+                  <span>22.09.04 - 22.12.22</span>
+                </div>
+              </div> <!--list_content_lower END-->
+              <div class="list_content">
+                <a href="#">
+                  <img src="img/어텀스파_pkg-837x558.jpg" alt="어썸-겟어웨이">
+                </a>
+                <h3>어텀 힐링 스파</h3>
+                <p>몸과 마음을 온전하게 휴식할 수 있는 스파 패키지로 힐링하세요.</p>
+              </div>
+              <div class="list_content_lower">
+                <div class="lower_wrap">
+                    <b>예약기간</b>
+                    <span>22.08.21 - 22.11.20</span>
+                </div>
+                <div class="lower_wrap">
+                  <b>숙박기간</b>
+                  <span>22.08.21 - 22.11.20</span>
+                </div>
+              </div> <!--list_content_lower END-->
+            </div> <!--wrap END-->
+          </div> <!--con1_content_inner END-->
+        </div> <!--con1_content END-->
+      </section>
+      <section class="con2">
+        <p>Maecenas volutpat erat enim, quis pharetra mi dictum at. Nullam condimentum felis ut massa vehicula mollis.
+          Ut a nisi sit amet metus tempus molestie. Nulla semper ut ante at luctus. Curabitur rhoncus nibh vel dolor
+          ultrices interdum eu ac nunc. Mauris nec turpis dapibus, luctus nisi sit amet, mattis lectus. Maecenas
+          hendrerit diam vitae mauris faucibus maximus.</p>
+        <p>Nulla ullamcorper ligula tincidunt elit finibus, et vehicula est elementum. Sed rutrum lacus non lacus
+          sollicitudin viverra. Nulla facilisi. Quisque id dignissim lectus. Vivamus dignissim laoreet lorem non
+          efficitur. Nunc velit justo, pretium non urna sit amet, sollicitudin dignissim elit. In quis lobortis diam, ac
+          volutpat erat. Vestibulum vitae ante velit. Morbi feugiat mauris tortor, vel pretium urna accumsan non.
+          Vivamus sodales risus dictum nisl maximus, sit amet suscipit augue lacinia.
+          n hac habitasse platea dictumst. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+          inceptos himenaeos. Suspendisse potenti. Vivamus bibendum sodales lectus, a facilisis diam vehicula sit amet.
+          Pellentesque eros purus, convallis eu consequat id, rhoncus vel dui. Integer vestibulum facilisis justo eget
+          condimentum. Donec id convallis dolor.
+        </p>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>
